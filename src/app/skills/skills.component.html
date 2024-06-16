@@ -1,0 +1,14 @@
+<!-- src/app/skills/skills.component.html -->
+<div class="skills-section">
+  <div class="skills-content">
+    <h2>Technical Skills</h2>
+    <div *ngFor="let group of skills" class="skills-group" [ngClass]="{'roles-group': group.category === 'Roles'}">
+      <h3>{{ group.category }}</h3>
+      <div class="skills-grid">
+        <div class="skill-card" *ngFor="let skill of group.items">
+          {{ skill }}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,11 @@
+<div class="education-section">
+  <div class="education-content">
+    <h2>Education</h2>
+    <div *ngFor="let degree of degrees" class="degree-card fade-in">
+      <h3>{{ degree.title }}</h3>
+      <p>{{ degree.institution }}</p>
+      <p>{{ degree.location }}</p>
+      <p>{{ degree.years }}</p>
+    </div>
+  </div>
+</div>

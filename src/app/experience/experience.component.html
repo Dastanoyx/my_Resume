@@ -1,0 +1,13 @@
+<div class="experience-section">
+  <div class="experience-content">
+    <h2>Professional Experience</h2>
+    <div *ngFor="let job of jobs" class="job-card fade-in">
+      <h3>{{ job.title }} - {{ job.company }}, {{ job.location }}</h3>
+      <p>{{ job.date }}</p>
+      <div *ngFor="let app of job.applications" class="application-card">
+        <h4>{{ app.name }}</h4>
+        <p>{{ app.description }}</p>
+      </div>
+    </div>
+  </div>
+</div>

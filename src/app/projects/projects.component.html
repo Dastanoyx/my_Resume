@@ -1,0 +1,10 @@
+<!-- src/app/projects/projects.component.html -->
+<div class="projects-section">
+  <div class="projects-content">
+    <h2>Key Projects</h2>
+    <div *ngFor="let project of projects" class="project-card fade-in">
+      <h3>{{ project.name }}</h3>
+      <p>{{ project.description }}</p>
+    </div>
+  </div>
+</div>
